@@ -1,5 +1,29 @@
-/* Navbar */
-.navbar-default{
-  background-color:rgba(248, 248, 248, 0.45); 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+main {
+  flex: 1 0 auto;
+}
+/* Navbar */
+nav{
+  background-color:rgba(248, 248, 248, 0.45);
+}
+nav .brand-logo{
+  color:#000;
+}
+nav ul a{
+  color:#e4e4e4;
+}
+
 /* END | Navbar */
+
+
+
+
+
+/* footer */
+
+/*  */
