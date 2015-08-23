@@ -1,6 +1,46 @@
+@font-face {
+    font-family: opensans;
+    src: url(../font/OpenSans-Light.ttf);
+}
+html{
+  min-height: 100%;
+}
 body {
-  background: gradient(#D7D3C8,#F6F4EC);
-  background-image: url(../img/grain.png);
+  font-family: opensans;
+  font-size: 14px;
+  line-height: 20px;
+  background:
+		url(../img/grain.png),
+		-moz-linear-gradient(top, #D7D3C8 0%,#F6F4EC 100%);
+}
+.large {
+  font-size: 72px;
+  letter-spacing: -3px;
+  line-height: 100%;
+}
+h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  line-height: 100%;
+}
+h2 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 100%;
+}
+h3 {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  line-height: 100%;
+}
+h4 {
+  font-size: 24px;
+  letter-spacing: -0.25px;
+  line-height: 100%;
+}
+.small, small {
+  font-size: 12px;
+  line-height: 100%;
 }
 /* Navbar */
 nav{
@@ -20,5 +60,8 @@ nav ul a{
 
 
 /* footer */
+footer.page-footer{
+  background-color: #D7D3C8 ;
+}
 
 /*  */
