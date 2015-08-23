@@ -47,13 +47,14 @@ img{
 }
 /* Navbar */
 nav{
+  position: fixed;
   background-color:rgba(248, 248, 248, 0.45);
 }
 nav .brand-logo{
   color:#000;
 }
 nav ul a{
-  color:#e4e4e4;
+  color:#000;
 }
 
 /* END | Navbar */
