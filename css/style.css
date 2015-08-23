@@ -42,6 +42,9 @@ h4 {
   font-size: 12px;
   line-height: 100%;
 }
+img{
+  max-width: 100%;
+}
 /* Navbar */
 nav{
   background-color:rgba(248, 248, 248, 0.45);
