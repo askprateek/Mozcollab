@@ -16,7 +16,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 <head>
-<body>
+<body onload="loadMap()">
   <section id="navbar">
     <nav>
       <div class="nav-wrapper">
@@ -122,24 +122,53 @@
   <!-- Footer and Contact Details -->
   <section id="footer">
     <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 col m6 col l6">
+		 <div class="container">
+			<div class="row">
+				<div class="col m6 l6 hide-on-small-only" style="border:1px solid black;">
+					<!--Twitter Tweets api-->
+						<a class="twitter-timeline"  href="https://twitter.com/mozpacers" data-widget-id="640246924461772800" height="400px" data-chrome="transparent nofooter">Tweets by @mozpacers</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+					<!--END | Twitter Tweets api-->
+				</div>
+				<!--Contact Us-->
+				<div class="col m6 l6 s6">
+					<h5 class="center-align"><b>Connect With Us</b></h5>
+					<div class="col m6 l6 s6">
+					<!--Google Maps-->
+						<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function loadMap() {
+   var mapOptions = {
+      center:new google.maps.LatLng(28.3677046, 77.3170066),
+      zoom:15
+   }
+   var map=new google.maps.Map(document.getElementById("sample"),mapOptions);
+   var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(28.3677046, 77.3170066),
+      map: map,
+   });     
+}
+</script>   
+		<div id="sample" style="width:100%;height:200px;"></div>
 
-              <div class="row">
-                <div class="s12">
-                  <h4>Contact US</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="s12">
-                  Email ID: Mozpacers@Gmail.com
-                </div>
+					
+					<!--END | Google Maps-->
+					</div>
+					<div class="col m6 l6 s6">
+					<!-- Social And Contact Links-->
+						<p><img src="img/email.png"  align="left" class="responsive-img" width="30px"> &nbsp;&nbsp;<a href="mailto:mozpacers@gmail.com">mozpacers@gmail.com</a></p>
+						<p><img src="img/fb.png"  align="left" class="responsive-img" width="30px"> &nbsp;&nbsp;<a href="https://www.facebook.com/mozpacers">Facebook</a></p>
+						<p><img src="img/tw.png"  align="left" class="responsive-img" width="30px"> &nbsp;&nbsp;<a href="https://www.twitter.com/mozpacers">Twitter</a></p>
+						<p><img src="img/wiki.png"  align="left" class="responsive-img" width="30px"> &nbsp;&nbsp;<a href="https://wiki.mozilla.org/MozillaDelhi">Mozilla Wiki</a></p>
 
-              </div>
-            </div>
-          </div>
-        </div>
+						<!--END || Links-->
+					</div>
+					
+				</div>
+				<!--END | Contact Us-->
+			</div>
+		 </div>
     </footer>
   </section>
 
